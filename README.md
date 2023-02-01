@@ -1,4 +1,2 @@
 # Vice Youtube API Analysis
-Data APIs are a great source of data for data science. 
-
-The goal of this project is to run a EDA on a popular youtube channel to see what we can find.
+This code uses the Google API Client library for Python to access YouTube API and retrieve information about a YouTube channel and its videos. It retrieves statistics about the channel such as its title, number of subscribers, number of views, and the total number of videos. It also retrieves video ids from a playlist. The code also makes use of the dateutil library to parse dates, the pandas library to handle data, and the Seaborn, Matplotlib, Nltk, and wordcloud libraries for data visualization and NLP tasks.
