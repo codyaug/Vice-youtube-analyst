@@ -1,0 +1,88 @@
+Analysis Report
+==================================================
+Mean Squared Error: 460214439.117984 (±726256558.0454504)
+Mean Absolute Error: 6052.098400000001 (±4911.3401608351905)
+R-squared: 0.8380994530651474 (±0.10672365645835313)
+
+Correlation Heatmap:
+                       view_count  likeCount  commentCount  dislikeCount  \
+view_count               1.000000   0.975435      0.891155           NaN   
+likeCount                0.975435   1.000000      0.883131           NaN   
+commentCount             0.891155   0.883131      1.000000           NaN   
+dislikeCount                  NaN        NaN           NaN           NaN   
+description_sentiment   -0.002887  -0.008037     -0.004344           NaN   
+hour                     0.002940  -0.026755     -0.072604           NaN   
+day                     -0.081414  -0.053705     -0.100495           NaN   
+month                   -0.185431  -0.131995     -0.079489           NaN   
+engagement_ratio        -0.292278  -0.168058     -0.181596           NaN   
+
+                       description_sentiment      hour       day     month  \
+view_count                         -0.002887  0.002940 -0.081414 -0.185431   
+likeCount                          -0.008037 -0.026755 -0.053705 -0.131995   
+commentCount                       -0.004344 -0.072604 -0.100495 -0.079489   
+dislikeCount                             NaN       NaN       NaN       NaN   
+description_sentiment               1.000000  0.215253 -0.071434  0.091260   
+hour                                0.215253  1.000000 -0.272587 -0.261488   
+day                                -0.071434 -0.272587  1.000000 -0.262365   
+month                               0.091260 -0.261488 -0.262365  1.000000   
+engagement_ratio                    0.011928 -0.320864  0.169463  0.506839   
+
+                       engagement_ratio  
+view_count                    -0.292278  
+likeCount                     -0.168058  
+commentCount                  -0.181596  
+dislikeCount                        NaN  
+description_sentiment          0.011928  
+hour                          -0.320864  
+day                            0.169463  
+month                          0.506839  
+engagement_ratio               1.000000  
+
+Engagement Ratio Distribution:
+count    50.000000
+mean      0.019880
+std       0.008221
+min       0.008970
+25%       0.014335
+50%       0.018162
+75%       0.022630
+max       0.040725
+Name: engagement_ratio, dtype: float64
+
+Day of Week Distribution:
+Monday       11
+Thursday     10
+Saturday     10
+Friday        9
+Sunday        5
+Tuesday       3
+Wednesday     2
+Name: publishedDayName, dtype: int64
+
+Top 20 Most Common Words in Descriptions:
+       Word  Frequency
+37        :       2088
+2         ,        749
+10      the        623
+36     VICE        620
+139   https        617
+32        .        400
+38     http        386
+5       and        356
+23       to        351
+14       of        312
+9        on        198
+75      The        162
+157       ?        136
+58        a        127
+92     have        107
+147  Follow        106
+85      our        101
+34     here         96
+17     from         95
+33    Click         91
+
+Sentiment Distribution in Descriptions:
+Positive    25
+Negative    25
+Name: description_sentiment, dtype: int64
